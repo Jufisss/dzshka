@@ -1,0 +1,21 @@
+// Абстрактный класс Рептилия
+abstract class Reptile extends Vertebrate {
+    private double bodyTemperature;
+
+    public Reptile(String name, int age, double weight, double bodyTemperature) {
+        super(name, age, weight);
+        this.bodyTemperature = bodyTemperature;
+    }
+
+    public double getBodyTemperature() {
+        return bodyTemperature;
+    }
+
+    public void setBodyTemperature(double bodyTemperature) {
+        this.bodyTemperature = bodyTemperature;
+    }
+
+    public void baskInSun() {
+        System.out.println(getName() + " греется на солнце");
+    }
+}
